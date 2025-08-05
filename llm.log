@@ -1,0 +1,439 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8500
+  Network URL: http://10.6.106.2:8500
+  External URL: http://195.83.85.242:8500
+
+/home/zineb/mAb_app/RetrieveFunction.py:2: LangChainDeprecationWarning: Importing Chroma from langchain.vectorstores is deprecated. Please replace deprecated imports:
+
+>> from langchain.vectorstores import Chroma
+
+with new imports of:
+
+>> from langchain_community.vectorstores import Chroma
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.vectorstores import Chroma
+/home/zineb/mAb_app/RetrieveFunction.py:5: LangChainDeprecationWarning: Importing HuggingFaceEmbeddings from langchain.embeddings is deprecated. Please replace deprecated imports:
+
+>> from langchain.embeddings import HuggingFaceEmbeddings
+
+with new imports of:
+
+>> from langchain_community.embeddings import HuggingFaceEmbeddings
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.embeddings import HuggingFaceEmbeddings
+2025-08-04 17:48:49.115 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : ansuvimab
+2025-08-04 17:48:49.409 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour ansuvimab
+2025-08-05 10:43:54.175 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : ansuvimab
+2025-08-05 10:43:54.328 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour ansuvimab
+2025-08-05 11:19:45.790 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : ansuvimab
+2025-08-05 11:19:45.965 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour ansuvimab
+2025-08-05 11:25:13.210 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 11:25:13.336 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 11:29:43.813 Script compilation error
+Traceback (most recent call last):
+  File "/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zineb/mAb_app/main_script.py", line 4
+    section = st.radio(
+IndentationError: unexpected indent
+2025-08-05 11:29:43.820 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-08-05 11:31:39.704 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : ansuvimab
+2025-08-05 11:31:39.824 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour ansuvimab
+2025-08-05 11:35:29.259 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 11:35:29.364 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 11:47:35.287 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : ansuvimab
+2025-08-05 11:47:35.447 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour ansuvimab
+2025-08-05 11:47:48.551 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 11:47:48.674 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 11:50:14.582 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 11:50:14.742 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 11:52:07.608 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 11:52:07.712 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 11:54:32.990 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 11:54:33.102 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 11:56:02.982 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 11:56:03.138 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 13:41:26.458 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 13:41:26.587 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 13:43:19.576 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 13:43:19.752 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:282 in image_to_url                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'cnrs_logo.png'[0m
+
+[3mDuring handling of the above exception, another exception occurred:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:164 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'cnrs_logo.png'[0m
+
+[3mThe above exception was the direct cause of the following exception:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/mAb_app/[0m[1mmain_script.py[0m:91 in <module>                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 88 [0m[2m# Affichage des logos via Streamlit (meilleure compatibilité)[0m                  [31m [0m
+[31m [0m   [2m 89 [0mcols = st.columns([94m3[0m)                                                           [31m [0m
+[31m [0m   [2m 90 [0m[94mwith[0m cols[[94m0[0m]:                                                                  [31m [0m
+[31m [0m [31m❱ [0m 91 [2m│   [0m[1;4mst.image([0m[1;4;33m"[0m[1;4;33mcnrs_logo.png[0m[1;4;33m"[0m[1;4m, width=[0m[1;4;94m120[0m[1;4m, caption=[0m[1;4;33m"[0m[1;4;33mCNRS[0m[1;4;33m"[0m[1;4m)[0m                       [31m [0m
+[31m [0m   [2m 92 [0m[94mwith[0m cols[[94m1[0m]:                                                                  [31m [0m
+[31m [0m   [2m 93 [0m[2m│   [0mst.image([33m"[0m[33mimgt_logo.png[0m[33m"[0m, width=[94m120[0m, caption=[33m"[0m[33mIMGT[0m[33m"[0m)                       [31m [0m
+[31m [0m   [2m 94 [0m[94mwith[0m cols[[94m2[0m]:                                                                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmetrics_[0m [31m [0m
+[31m [0m [1mutil.py[0m:443 in wrapped_func                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/[0m[1mimage.p[0m [31m [0m
+[31m [0m [1my[0m:180 in image                                                                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:439 in marshall_images                                                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:294 in image_to_url                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmedia_fi[0m [31m [0m
+[31m [0m [1mle_manager.py[0m:225 in add                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:114 in load_and_get_id                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:167 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mMediaFileStorageError: [0mError opening [32m'cnrs_logo.png'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:282 in image_to_url                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: 
+[32m'/home/zineb/mAb_app/cnrs_logo.png'[0m
+
+[3mDuring handling of the above exception, another exception occurred:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:164 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: 
+[32m'/home/zineb/mAb_app/cnrs_logo.png'[0m
+
+[3mThe above exception was the direct cause of the following exception:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/mAb_app/[0m[1mmain_script.py[0m:99 in <module>                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 96 [0m[2m# Affichage horizontal des logos via Streamlit[0m                                 [31m [0m
+[31m [0m   [2m 97 [0mcols = st.columns([94m3[0m)                                                           [31m [0m
+[31m [0m   [2m 98 [0m[94mwith[0m cols[[94m0[0m]:                                                                  [31m [0m
+[31m [0m [31m❱ [0m 99 [2m│   [0m[1;4mst.image(cnrs_logo_path, width=[0m[1;4;94m120[0m[1;4m, caption=[0m[1;4;33m"[0m[1;4;33mCNRS[0m[1;4;33m"[0m[1;4m)[0m                        [31m [0m
+[31m [0m   [2m100 [0m[94mwith[0m cols[[94m1[0m]:                                                                  [31m [0m
+[31m [0m   [2m101 [0m[2m│   [0mst.image(imgt_logo_path, width=[94m120[0m, caption=[33m"[0m[33mIMGT[0m[33m"[0m)                        [31m [0m
+[31m [0m   [2m102 [0m[94mwith[0m cols[[94m2[0m]:                                                                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmetrics_[0m [31m [0m
+[31m [0m [1mutil.py[0m:443 in wrapped_func                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/[0m[1mimage.p[0m [31m [0m
+[31m [0m [1my[0m:180 in image                                                                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:439 in marshall_images                                                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:294 in image_to_url                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmedia_fi[0m [31m [0m
+[31m [0m [1mle_manager.py[0m:225 in add                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:114 in load_and_get_id                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:167 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mMediaFileStorageError: [0mError opening [32m'/home/zineb/mAb_app/cnrs_logo.png'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:282 in image_to_url                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'cnrs_logo.png'[0m
+
+[3mDuring handling of the above exception, another exception occurred:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:164 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'cnrs_logo.png'[0m
+
+[3mThe above exception was the direct cause of the following exception:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/mAb_app/[0m[1mmain_script.py[0m:92 in <module>                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 89 [0mcol1, col2, col3 = st.columns([94m3[0m)                                               [31m [0m
+[31m [0m   [2m 90 [0m                                                                               [31m [0m
+[31m [0m   [2m 91 [0m[94mwith[0m col1:                                                                     [31m [0m
+[31m [0m [31m❱ [0m 92 [2m│   [0m[1;4mst.image([0m[1;4;33m"[0m[1;4;33mcnrs_logo.png[0m[1;4;33m"[0m[1;4m, width=[0m[1;4;94m120[0m[1;4m)[0m                                       [31m [0m
+[31m [0m   [2m 93 [0m                                                                               [31m [0m
+[31m [0m   [2m 94 [0m[94mwith[0m col2:                                                                     [31m [0m
+[31m [0m   [2m 95 [0m[2m│   [0mst.image([33m"[0m[33mimgt_logo.png[0m[33m"[0m, width=[94m120[0m)                                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmetrics_[0m [31m [0m
+[31m [0m [1mutil.py[0m:443 in wrapped_func                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/[0m[1mimage.p[0m [31m [0m
+[31m [0m [1my[0m:180 in image                                                                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:439 in marshall_images                                                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:294 in image_to_url                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmedia_fi[0m [31m [0m
+[31m [0m [1mle_manager.py[0m:225 in add                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:114 in load_and_get_id                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:167 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mMediaFileStorageError: [0mError opening [32m'cnrs_logo.png'[0m
+2025-08-05 14:01:08.537 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 14:01:08.697 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:282 in image_to_url                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'mabapp/cnrs_logo.png'[0m
+
+[3mDuring handling of the above exception, another exception occurred:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:164 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'mabapp/cnrs_logo.png'[0m
+
+[3mThe above exception was the direct cause of the following exception:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/mAb_app/[0m[1mmain_script.py[0m:24 in <module>                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 21 [0m[33mh1 [0m[33m{[0m                                                                           [31m [0m
+[31m [0m   [2m 22 [0m[2;33m│   [0m[33mcolor: #4B0082;  /* Violet foncé pour le titre */[0m                          [31m [0m
+[31m [0m   [2m 23 [0m[2;33m│   [0m[33mtext-align: center;[0m                                                        [31m [0m
+[31m [0m [31m❱ [0m 24 [33m}[0m                                                                              [31m [0m
+[31m [0m   [2m 25 [0m[33mh3, .stMarkdown h2 [0m[33m{[0m                                                           [31m [0m
+[31m [0m   [2m 26 [0m[2;33m│   [0m[33mcolor: #800080;  /* Violet pour les sous-titres */[0m                         [31m [0m
+[31m [0m   [2m 27 [0m[2;33m│   [0m[33mmargin-top: 30px;[0m                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmetrics_[0m [31m [0m
+[31m [0m [1mutil.py[0m:443 in wrapped_func                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/[0m[1mimage.p[0m [31m [0m
+[31m [0m [1my[0m:180 in image                                                                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:439 in marshall_images                                                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:294 in image_to_url                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmedia_fi[0m [31m [0m
+[31m [0m [1mle_manager.py[0m:225 in add                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:114 in load_and_get_id                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:167 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mMediaFileStorageError: [0mError opening [32m'mabapp/cnrs_logo.png'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:282 in image_to_url                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'mabapp/cnrs_logo.png'[0m
+
+[3mDuring handling of the above exception, another exception occurred:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:164 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'mabapp/cnrs_logo.png'[0m
+
+[3mThe above exception was the direct cause of the following exception:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/mAb_app/[0m[1mmain_script.py[0m:24 in <module>                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 21 [0m[2m# Affichage des logos alignés en 3 colonnes[0m                                    [31m [0m
+[31m [0m   [2m 22 [0mcol1, col2, col3 = st.columns([[94m1[0m,[94m1[0m,[94m1[0m])                                         [31m [0m
+[31m [0m   [2m 23 [0m[94mwith[0m col1:                                                                     [31m [0m
+[31m [0m [31m❱ [0m 24 [2m│   [0m[1;4mst.image([0m[1;4;33m"[0m[1;4;33mmabapp/cnrs_logo.png[0m[1;4;33m"[0m[1;4m, width=[0m[1;4;94m120[0m[1;4m, caption=[0m[1;4;33m"[0m[1;4;33mCNRS[0m[1;4;33m"[0m[1;4m)[0m                [31m [0m
+[31m [0m   [2m 25 [0m[94mwith[0m col2:                                                                     [31m [0m
+[31m [0m   [2m 26 [0m[2m│   [0mst.image([33m"[0m[33mmabapp/imgt_logo.png[0m[33m"[0m, width=[94m120[0m, caption=[33m"[0m[33mIMGT[0m[33m"[0m)                [31m [0m
+[31m [0m   [2m 27 [0m[94mwith[0m col3:                                                                     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmetrics_[0m [31m [0m
+[31m [0m [1mutil.py[0m:443 in wrapped_func                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/[0m[1mimage.p[0m [31m [0m
+[31m [0m [1my[0m:180 in image                                                                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:439 in marshall_images                                                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:294 in image_to_url                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmedia_fi[0m [31m [0m
+[31m [0m [1mle_manager.py[0m:225 in add                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:114 in load_and_get_id                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:167 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mMediaFileStorageError: [0mError opening [32m'mabapp/cnrs_logo.png'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:282 in image_to_url                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'mabapp/cnrs_logo.png'[0m
+
+[3mDuring handling of the above exception, another exception occurred:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:164 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: [32m'mabapp/cnrs_logo.png'[0m
+
+[3mThe above exception was the direct cause of the following exception:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/mAb_app/[0m[1mmain_script.py[0m:24 in <module>                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 21 [0m[2m# Affichage des logos alignés en 3 colonnes[0m                                    [31m [0m
+[31m [0m   [2m 22 [0mcol1, col2, col3 = st.columns([[94m1[0m,[94m1[0m,[94m1[0m])                                         [31m [0m
+[31m [0m   [2m 23 [0m[94mwith[0m col1:                                                                     [31m [0m
+[31m [0m [31m❱ [0m 24 [2m│   [0m[1;4mst.image([0m[1;4;33m"[0m[1;4;33mmabapp/cnrs_logo.png[0m[1;4;33m"[0m[1;4m, width=[0m[1;4;94m120[0m[1;4m, caption=[0m[1;4;33m"[0m[1;4;33mCNRS[0m[1;4;33m"[0m[1;4m)[0m                [31m [0m
+[31m [0m   [2m 25 [0m[94mwith[0m col2:                                                                     [31m [0m
+[31m [0m   [2m 26 [0m[2m│   [0mst.image([33m"[0m[33mmabapp/imgt_logo.png[0m[33m"[0m, width=[94m120[0m, caption=[33m"[0m[33mIMGT[0m[33m"[0m)                [31m [0m
+[31m [0m   [2m 27 [0m[94mwith[0m col3:                                                                     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmetrics_[0m [31m [0m
+[31m [0m [1mutil.py[0m:443 in wrapped_func                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/[0m[1mimage.p[0m [31m [0m
+[31m [0m [1my[0m:180 in image                                                                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:439 in marshall_images                                                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/elements/lib/[0m[1mima[0m [31m [0m
+[31m [0m [1mge_utils.py[0m:294 in image_to_url                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmedia_fi[0m [31m [0m
+[31m [0m [1mle_manager.py[0m:225 in add                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:114 in load_and_get_id                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/[0m[1mmemory_m[0m [31m [0m
+[31m [0m [1media_file_storage.py[0m:167 in _read_file                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mMediaFileStorageError: [0mError opening [32m'mabapp/cnrs_logo.png'[0m
+2025-08-05 14:13:16.223 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 14:13:16.392 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 14:15:13.879 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 14:15:14.014 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+2025-08-05 14:37:49.838 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 14:37:49.982 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 5 chunks trouvés pour relatlimab
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/EnvSpaces/ragEnv/lib/python3.11/site-packages/streamlit/runtime/scriptru[0m [31m [0m
+[31m [0m [2mnner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/zineb/mAb_app/[0m[1mmain_script.py[0m:4 in <module>                                     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m  1 [0m[2m# --------------------------- IMPORTS ---------------------------[0m              [31m [0m
+[31m [0m   [2m  2 [0m                                                                               [31m [0m
+[31m [0m   [2m  3 [0m[94mimport[0m[90m [0m[4;96mstreamlit[0m[90m [0m[94mas[0m[90m [0m[4;96mst[0m  [2m# Librairie principale pour créer l'interface web[0m      [31m [0m
+[31m [0m [31m❱ [0m  4 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96mRetrieveFunction[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m get_mab_info_from_chroma_no_temp[0m                  [31m [0m
+[31m [0m   [2m  5 [0m[94mfrom[0m[90m [0m[4;96mlangchain[0m[4;96m.[0m[4;96mvectorstores[0m[90m [0m[94mimport[0m Chroma  [2m# Pour interagir avec la base vecto[0m [31m [0m
+[31m [0m   [2m  6 [0m[94mfrom[0m[90m [0m[4;96mlangchain_ollama[0m[90m [0m[94mimport[0m OllamaLLM  [2m# Pour utiliser un LLM local via Ollam[0m [31m [0m
+[31m [0m   [2m  7 [0m[94mfrom[0m[90m [0m[4;96mlangchain[0m[4;96m.[0m[4;96membeddings[0m[90m [0m[94mimport[0m HuggingFaceEmbeddings  [2m# Pour générer les emb[0m [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[91m────────────────────────────────────────────────────────────────────────────────────────[0m
+[91m [0m [2m /home/zineb/mAb_app/[0m[1mRetrieveFunction.py[0m[1m:[0m[1m39[0m                                          [91m [0m
+[91m [0m     all_docs = [1;35mvectorstore.similarity_search[0m[1m([0mmab_name, [33mk[0m=, [33mfilter[0m=[1m{[0m[32m"antibody"[0m: mab_n [91m [0m
+[91m [0m                                                          [1;91m▲[0m                           [91m [0m
+[91m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mSyntaxError: [0minvalid syntax
+2025-08-05 14:47:53.759 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:36 - 🔎 Extraction pour : relatlimab
+2025-08-05 14:47:53.938 | INFO     | RetrieveFunction:get_mab_info_from_chroma_no_temp:40 - 10 chunks trouvés pour relatlimab
